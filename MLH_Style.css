@@ -1,0 +1,165 @@
+/* style.css - Mark Lane Herndon 2011
+<STYLE type="text/css">*/
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+width: 100%;
+height: 100%; 
+max-height: 100%; 
+}
+
+#headimg{
+position:absolute;
+z-index:1;
+width:100%;
+height:100%;
+}
+
+#bodyimg{
+/*position:absolute;*/
+z-index:1;
+width:100%;
+height:auto;
+}
+
+#framecontentTop{
+position: fixed; 
+left: 0; /*Set left value to WidthOfLeftFrameDiv*/
+right: 0;
+width: 100%;
+height: 20%; /*Height of top frame div*/
+top: 0;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: navy;
+color: white;
+}
+
+#framecontentLeft{ 
+position: fixed; 
+top: 20%; 
+left: 0;
+width: 12%; /*Width of left frame div*/
+height: auto;
+bottom: 0;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: navy;
+color: white;
+}
+
+#maincontent{
+position: absolute; 
+left: 12%; /*Set left value to WidthOfLeftFrameDiv*/
+top: 20%; /*Set top value to HeightOfTopFrameDiv*/
+right: 0;
+width: auto;
+bottom: 0;
+overflow: auto; 
+background: #ffffff;
+}
+
+.innertube{
+margin: 0px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+margin: 0 0 0 0
+padding: 1 1 1 1; /*Set value to (HeightOfTopFrameDiv 0 0 WidthOfLeftFrameDiv)*/
+}
+
+* html #framecontentLeft{ /*IE6 hack*/
+height: 80%; 
+width: 12%; 
+right: 12%;
+top: 80%;
+left: 0;
+bottom: auto;
+}
+
+* html #maincontent{ /*IE6 hack*/
+right: auto;
+top: 20%;
+left: 12%;
+bottom: auto;
+height: 80%; 
+width: 88%; 
+}
+
+* html #framecontentTop{ /*IE6 hack*/
+right: 0;
+top: 80%;
+left: auto;
+bottom: 20%;
+height: 20%; 
+width: 100%;
+}
+
+A:link {
+ COLOR: #000080
+}
+A:visited {
+ COLOR: #FF0000
+}
+A:hover {
+ COLOR: green
+ }
+
+ H1 {
+font-family: Times New Roman, Helvetica, sans-serif;
+font-size: 24px;
+font-weight: bold;
+color: black; /*#F10000;*/
+}
+
+H2 {
+font-family: Times New Roman, Helvetica, sans-serif;
+font-size: 22px;
+font-weight: normal;
+color: #000080;
+}
+
+H3 {
+font-family: Times New Roman, Alba Super, sans-serif;
+font-size: 20px;
+font-weight: normal;
+color: #000000;
+}
+
+H4 {
+font-family: Times New Roman, Alba Super, sans-serif;
+font-size: 18px;
+font-weight: italics;
+color: black;
+border: medium outset;
+}
+
+H5 {
+font-family: Times New Roman, Alba Super, sans-serif;
+font-size: 14px;
+font-weight: normal;
+color: #99ffff;
+}
+
+H6 {
+font-family: Times New Roman, Alba Super, sans-serif;
+font-size: 10px;
+font-weight: normal;
+color: #99ffff;
+}
+
+EM {
+color:red;
+font-weight:900;
+font-style:normal;
+}
+
+HR {
+size: 3;
+color: black;
+width: 100%;
+}
+
+/*.nounderline 
+A {text-decoration:none}*/
+input {width: 100px;}
